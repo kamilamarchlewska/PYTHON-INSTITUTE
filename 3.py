@@ -2,10 +2,6 @@
 # (rok, miesiąc, oraz dzień miesiąca) i zwraca odpowiedni dzień roku
 # lub wartość None jeśli którykolwiek z argumentów jest nieprawidłowy.
 
-year = int(input('Enter the year: '))
-month = int(input('Enter month: '))
-day = int(input('Enter day: '))
-
 def yearLeap(year):
     if year % 4 == 0:
         print(f"{year} is a leap year.")
@@ -40,6 +36,10 @@ def dateUser(year, month, day):
     else:
         print(f'Date: {year}.{month}.{day}')
 
+
+year = int(input('Enter the year: '))
+month = int(input('Enter month: '))
+day = int(input('Enter day: '))
 print('')
 yearLeap(year)
 daysMonth(month)
